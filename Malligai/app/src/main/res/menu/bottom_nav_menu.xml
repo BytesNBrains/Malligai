@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/cart"
+        android:title="@string/morder"
+        android:enabled="true"/>
+    <item android:id="@+id/action_search"
+        android:title="@string/profile"
+        android:icon="@drawable/profile"
+        android:enabled="true"/>
+
+
+
+</menu>
