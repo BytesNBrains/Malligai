@@ -36,10 +36,10 @@ dependencies {
 
     // Add the SDKs for any other Firebase products you want to use in your app
     // For example, to use Firebase Authentication and Cloud Firestore
-    implementation 'com.google.firebase:firebase-auth:19.1.0'
     implementation 'com.google.firebase:firebase-firestore:21.1.1'
     //firebase db
     implementation 'com.google.firebase:firebase-database:19.1.0'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.7'
 
 
     //for bottom navigation bar

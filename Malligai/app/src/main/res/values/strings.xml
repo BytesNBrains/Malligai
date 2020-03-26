@@ -9,6 +9,8 @@
     <string name="ad2">Adress-lane 2</string>
     <string name="pin">Pincode</string>
     <string name="Submit">Submit</string>
+    <string name="update">Update</string>
+    <string name="Logout">Logout</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

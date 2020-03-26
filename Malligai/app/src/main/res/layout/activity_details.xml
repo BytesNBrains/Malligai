@@ -41,20 +41,20 @@
             <EditText android:id="@+id/addresslane1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
+                android:inputType="textPostalAddress"
                 android:layout_marginTop="15sp"
                 android:hint="@string/ad1"/>
             <EditText android:id="@+id/addresslane2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
-                android:inputType="textPassword"
+                android:inputType="textPostalAddress"
                 android:hint="@string/ad2"/>
             <EditText android:id="@+id/pincode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15sp"
-                android:inputType="textPassword"
+                android:inputType="textPostalAddress"
                 android:hint="@string/pin"/>
             <Button
                 android:id="@+id/sbmit"

@@ -20,7 +20,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 //currently set to login activity. asks for number, otp and name
-                Intent intent = new Intent(Splash.this, Login.class);
+                Intent intent = new Intent(Splash.this, Register.class);
                 startActivity(intent);
             }
         };
