@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
@@ -26,15 +27,15 @@ public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
 
-
-    public MainActivity() {
-    }
+    Button mupdate,mlogout;
+    BottomNavigationView bottomNavigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadFragment(new Profilefragment());
+        bottomNavigation = findViewById(R.id.bottomNavigationView);
+
 
 
     }
@@ -53,15 +54,10 @@ public class MainActivity extends AppCompatActivity {
         return false;
 
     }
+
+
 }
 
-
-    /** when the user clicks on the bottom navigation bar, the fragment according to that is loaded up
-     * and then inflated with the local method loadFragment();
-     * all the fragment related code is in HomeActivity - home - search- cart and user
-     *
-     *
-     * **/
 
 
 
@@ -71,5 +67,27 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_search:
                 fragment = new Profilefragment();
                 break;
+
+
+
+
+
+                ///hhvaschvshdc
+
+
+                  loadFragment(new Profilefragment());
+
+        setContentView(R.layout.fragment_profile);
+
+        mupdate = (Button) findViewById(R.id.update);
+        mlogout = (Button) findViewById(R.id.logout);
+
+        mupdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this , details.class);
+                startActivity(intent);
+            }
+        });
 
  */

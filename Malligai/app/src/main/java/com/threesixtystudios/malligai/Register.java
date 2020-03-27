@@ -1,7 +1,9 @@
 package com.threesixtystudios.malligai;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -15,6 +17,7 @@ public class Register extends AppCompatActivity {
 
     private Spinner spinner;
     private EditText editText;
+    private SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,7 @@ public class Register extends AppCompatActivity {
                // String code = CountryData.countryAreaCodes[spinner.getSelectedItemPosition()];
 
                 String number = editText.getText().toString().trim();
+                SaveNUM("NUMBER", number);
 
                 if (number.isEmpty() || number.length() < 10) {
                     editText.setError("Valid number is required");
@@ -60,5 +64,11 @@ public class Register extends AppCompatActivity {
 
             startActivity(intent);
         }
+    }
+    public void SaveNUM(String key, String value){
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString(key, value);
+        editor.apply();
     }
 }

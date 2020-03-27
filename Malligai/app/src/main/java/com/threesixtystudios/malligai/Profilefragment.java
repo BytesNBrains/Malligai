@@ -17,6 +17,8 @@ public class Profilefragment extends Fragment {
                              @Nullable Bundle savedInstanceState){
 
         return inflater.inflate(R.layout.fragment_profile, null);
+
+
     }
 
 
